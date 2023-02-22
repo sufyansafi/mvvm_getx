@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:mvvm_getx/View/splashscreen.dart';
 import 'package:mvvm_getx/getxloclization/localization.dart';
 import 'package:mvvm_getx/routes/routes.dart';
+
+import 'components/internetexceptions.dart';
 // import 'package:mvvm_getx/routes/routes.dart';
 // import 'package:mvvm_getx/routes/routes.dart';
 
@@ -18,12 +20,12 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       translations: Languages(),
-      locale: Locale("Hindi_Id"),
-      fallbackLocale: Locale("en_uS"),
+      locale: const Locale("en_Us"),
+      fallbackLocale: const Locale("en_uS"),
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Splashscreen(),
+      home: const Splashscreen(),
       getPages: Approutes.appRoutes(),
     );
   }

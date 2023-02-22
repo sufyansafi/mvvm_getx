@@ -6,6 +6,10 @@ class Languages extends Translations {
   Map<String, Map<String, String>> get keys => {
         "en_Us": {
           'email Hint': 'Enter email',
+          'internet exception':
+              ' we are unable to show result .plese check your connection',
+          'general exception':
+              "intenet connection loss, please click on try button",
         },
         "ur_pk": {
           'email Hint': 'ای میل درج کریں۔',

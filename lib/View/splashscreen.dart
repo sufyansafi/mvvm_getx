@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mvvm_getx/View/servicessplash.dart';
 
 import '../components/generalexception.dart';
 import '../components/roundbutton.dart';
@@ -12,19 +13,28 @@ class Splashscreen extends StatefulWidget {
 }
 
 class _SplashscreenState extends State<Splashscreen> {
+  Servicessplash splashscreen = Servicessplash();
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    splashscreen.isLogin();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('email Hint'.tr),
+        title: Text('Splashscreen'.tr),
       ),
       // ignore: prefer_const_constructors
-      body: Roundbutton(
-        height: 0,
-        title: 'Round button',
-        onPress: () {},
-        width: 0,
-      ),
+      body: Center(child: Text('Welcome back again'.tr)),
+      // Roundbutton(
+      //   height: 0,
+      //   title: 'Round button',
+      //   onPress: () {},
+      //   width: 0,
+      // ),
 
       /// GeneralexceptionsWidget(onPress: () {}),
       // const Image(image: AssetImage(Assets.icon1)),

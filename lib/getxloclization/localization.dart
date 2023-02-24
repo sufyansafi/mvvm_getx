@@ -10,6 +10,7 @@ class Languages extends Translations {
               ' we are unable to show result .plese check your connection',
           'general exception':
               "intenet connection loss, please click on try button",
+              'welcome':"Welcome back again",
         },
         "ur_pk": {
           'email Hint': 'ای میل درج کریں۔',
